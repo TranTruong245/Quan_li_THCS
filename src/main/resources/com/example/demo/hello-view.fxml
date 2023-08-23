@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Point3D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
@@ -13,32 +12,15 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StudentController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StudentController1">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
             <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <top>
-                  <AnchorPane prefHeight="45.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-                     <children>
-                        <AnchorPane layoutX="94.0" layoutY="-69.0" prefHeight="131.33333333333334" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                           <children>
-                              <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" text="Lớp học" />
-                              <Button layoutX="295.0" layoutY="10.0" mnemonicParsing="false" text="Môn học " />
-                              <Button layoutX="362.0" layoutY="10.0" mnemonicParsing="false" text="Thống kê" />
-                              <Button layoutX="216.0" layoutY="10.0" mnemonicParsing="false" text="Nhập điểm " />
-                              <Button layoutX="151.0" layoutY="10.0" mnemonicParsing="false" text="Giáo viên" />
-                              <Button layoutX="428.0" layoutY="10.0" mnemonicParsing="false" text="Phân quyền " />
-                              <Button layoutX="72.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Học sinh" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </AnchorPane>
-               </top>
                <center>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                  <AnchorPane prefHeight="689.0" prefWidth="1069.0" BorderPane.alignment="CENTER">
                      <children>
-                        <AnchorPane prefHeight="354.6666666666667" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="354.6666666666667" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <Label fx:id="lbKhoi" layoutX="14.0" layoutY="14.0" text="Khối " />
                               <FlowPane layoutX="41.0" layoutY="10.0" prefHeight="25.0" prefWidth="211.0">
@@ -48,29 +30,32 @@
                               </FlowPane>
                               <Label fx:id="lbLop" layoutX="139.0" layoutY="14.0" text="Lớp " />
                               <ChoiceBox fx:id="choiceBoxLop" layoutX="179.0" layoutY="10.0" prefHeight="25.0" prefWidth="71.0" />
-                              <TextField fx:id="txtSearch" layoutX="491.0" layoutY="10.0" />
-                              <Label layoutX="653.0" layoutY="14.0" text="Tìm kiếm " />
-                              <TableView fx:id="table" layoutX="34.0" layoutY="52.0" onMouseClicked="#getAddStudent" prefHeight="417.0" prefWidth="748.0">
+                              <TextField fx:id="txtSearch" layoutX="795.0" layoutY="10.0" />
+                              <Label layoutX="957.0" layoutY="14.0" text="Tìm kiếm " />
+                              <TableView fx:id="table" layoutX="76.0" layoutY="42.0" onMouseClicked="#getAddStudent" prefHeight="427.0" prefWidth="934.0">
                                  <columns>
                                     <TableColumn fx:id="indexCol" prefWidth="75.0" text="STT" />
-                                    <TableColumn fx:id="studentIDCol" prefWidth="75.0" text="Mã học sinh" />
-                                    <TableColumn fx:id="studentNameCol" prefWidth="125.0" text="Họ tên " />
-                                    <TableColumn fx:id="DoBCol" prefWidth="75.0" text="Ngày sinh" />
-                                    <TableColumn fx:id="genderCol" prefWidth="75.0" text="Giới tính" />
-                                    <TableColumn fx:id="addressCol" prefWidth="75.0" text="Địa chỉ" />
-                                    <TableColumn fx:id="sdtCol" prefWidth="75.0" text="SĐT liên hệ" />
+                                    <TableColumn fx:id="studentIDCol" prefWidth="95.33334350585938" text="Mã học sinh" />
+                                    <TableColumn fx:id="studentNameCol" prefWidth="158.00003051757812" text="Họ tên " />
+                                    <TableColumn fx:id="DoBCol" prefWidth="102.00006103515625" text="Ngày sinh" />
+                                    <TableColumn fx:id="genderCol" prefWidth="108.6666259765625" text="Giới tính" />
+                                    <TableColumn fx:id="addressCol" prefWidth="132.66668701171875" text="Địa chỉ" />
+                                    <TableColumn fx:id="sdtCol" prefWidth="166.66668701171875" text="SĐT liên hệ" />
+                                    <TableColumn fx:id="classNameCol" prefWidth="92.66668701171875" text="Lớp " />
                                  </columns>
                               </TableView>
-                              <Button layoutX="559.0" layoutY="473.0" mnemonicParsing="false" text="Sửa" />
-                              <Button layoutX="616.0" layoutY="473.0" mnemonicParsing="false" text="Xóa" />
-                              <Button fx:id="btnAdd" layoutX="679.0" layoutY="473.0" mnemonicParsing="false" onAction="#getAddStudent" text="Thêm" />
+                              <Button fx:id="editIcon" layoutX="852.0" layoutY="485.0" mnemonicParsing="false" text="Sửa" />
+                              <Button fx:id="deleteIcon" layoutX="911.0" layoutY="485.0" mnemonicParsing="false" text="Xóa" />
+                              <Button fx:id="btnAdd" layoutX="971.0" layoutY="485.0" mnemonicParsing="false" onAction="#getAddStudent" text="Thêm" />
                               <Button layoutX="306.0" layoutY="10.0" mnemonicParsing="false" onAction="#refreshTable" text="Làm mới" />
-                              <FontAwesomeIconView glyphName="CLOSE" layoutX="428.0" layoutY="27.0" />
                            </children>
                         </AnchorPane>
                      </children>
                   </AnchorPane>
                </center>
+               <top>
+                  <AnchorPane prefHeight="1.0" prefWidth="1050.0" BorderPane.alignment="CENTER" />
+               </top>
             </BorderPane>
          </children>
       </AnchorPane>

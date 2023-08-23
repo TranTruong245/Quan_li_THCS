@@ -7,14 +7,27 @@ public class Student extends User{
     private String userID;
     private String parentName;
     private String parentPhone;
+    private String className;
 
-    public Student(String studentID, String userID, String userName, String gender, Date DoB,String email, String phoneNumber,String address, String role, String account, String password, String parentName, String parentPhone) {
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public Student(String studentID, String userID, String userName, String gender, Date DoB, String email,
+                   String phoneNumber, String address, String role, String account, String password,
+                   String parentName, String parentPhone, String className) {
         super(userID,userName,gender, DoB, email, phoneNumber, address, role, account, password );
         this.studentID = studentID;
         this.userID = userID;
         this.parentName = parentName;
         this.parentPhone = parentPhone;
+        this.className = className;
     }
+
     public Student(){};
     public Student(String studentID, String userID, String userName, String gender, Date DoB) {
         super(userID,userName,gender, DoB);
